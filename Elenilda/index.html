@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Equipamentos Médicos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Equipamentos de Diagnóstico Médico</h1>
+    </header>
+
+    <nav>
+      <button onclick="showTab('evokadus')" class="active">Evokadus</button>
+      <button onclick="showTab('equip2')">DEA</button>
+      <button onclick="showTab('equip3')">Tomografia Computadorizada</button>
+    </nav>
+
+    <main>
+      <article
+        id="evokadus"
+        class="content active"
+        role="tabpanel"
+        aria-labelledby="tab-evokadus"
+      >
+        <h2>Evokadus - PEATE / BERA</h2>
+        <img
+          src="assets/img/evokadus.png"
+          alt="Imagem do aparelho Evokadus"
+          style="
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+          "
+        />
+
+        <section>
+          <h3>Função do Aparelho</h3>
+          <p>
+            O Equipamento Bera refere-se a dispositivos utilizados para a
+            audiometria de tronco encefálico (BERA), que avalia o funcionamento
+            do sistema auditivo até a porção do tronco encefálico. O Evokadus é
+            um dos equipamentos mais recentes, permitindo exames sem a
+            necessidade de colaboração do paciente, ideal para bebês e
+            crianças1. Equipamentos como o Evokadus e outros sistemas portáteis
+            são essenciais para o diagnóstico de perdas auditivas
+            neurossensoriais e avaliação da via auditiva5. O exame BERA é
+            frequentemente realizado em recém-nascidos e crianças com riscos de
+            perda auditiva, como a Síndrome de Down4. Esses equipamentos são
+            indispensáveis para clínicas de diagnóstico auditivo e hospitais,
+            oferecendo alta precisão e tecnologia avançada para a avaliação
+            auditiva5.
+          </p>
+        </section>
+
+        <section class="tech-specs">
+          <h3>Ficha Técnica do Aparelho</h3>
+          <div>
+            <p><strong>Modelo:</strong> Evokadus</p>
+            <p>
+              <strong>Fabricante:</strong> Contronic Sistemas Automáticos Ltda
+              (Brasil)
+            </p>
+
+            <p><strong>Exames Realizados:</strong></p>
+            <ul>
+              <li>ABR – Resposta Auditiva de Tronco Encefálico</li>
+              <li>ASSR – Resposta Auditiva de Estado Estável</li>
+              <li>T-ABR – ABR de Triagem</li>
+              <li>EcochG – Eletrococleografia</li>
+              <li>MLR – Respostas de Média Latência</li>
+              <li>LLR – Respostas de Longa Latência</li>
+              <li>P300 – Potencial Cognitivo</li>
+              <li>MMN – Mismatch Negativity</li>
+              <li>cVEMP – Potencial Miogênico Vestibular Cervical</li>
+              <li>oVEMP – Potencial Miogênico Vestibular Ocular</li>
+              <li>gVEMP – Estimulação Galvânica Vestibular</li>
+            </ul>
+
+            <p><strong>Componentes Principais:</strong></p>
+            <ul>
+              <li>Estimulador acústico e galvânico</li>
+              <li>Interface biológica EVKBIO</li>
+              <li>Software Evokadus para Windows</li>
+            </ul>
+
+            <p><strong>Acessórios Inclusos:</strong></p>
+            <ul>
+              <li>Cabos de conexão</li>
+              <li>Eletrodos de superfície</li>
+              <li>Fones de inserção ou convencionais (auriculares)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>Como o Exame é Realizado</h3>
+          <p>
+            O processo do exame BERA envolve algumas etapas para garantir a
+            captação precisa dos sinais. Primeiramente, eletrodos são fixados na
+            cabeça do paciente. Um eletrodo é colocado na testa e outros dois
+            atrás das orelhas. Uma pasta condutora é aplicada sob os eletrodos.
+            Em seguida, o paciente coloca fones de ouvido conectados ao
+            equipamento, que emite estímulos sonoros. Os eletrodos captam as
+            respostas elétricas geradas pelo nervo auditivo e pelo tronco
+            cerebral, que são amplificadas, analisadas e exibidas em forma de
+            ondas para interpretação do especialista.
+          </p>
+        </section>
+
+        <section>
+          <h3>Física Envolvida</h3>
+          <p>
+            O BERA funciona captando sinais elétricos minúsculos do sistema
+            auditivo.
+          </p>
+          <ol>
+            <li>
+              <strong>Captação:</strong> Eletrodos de superfície detectam os
+              sinais. A pele é limpa e usa-se pasta condutora para otimizar o
+              contato.
+            </li>
+            <li>
+              <strong>Amplificação e Filtragem:</strong> Os sinais são
+              amplificados e filtrados para isolar o sinal do BERA.
+            </li>
+            <li>
+              <strong>Média de Sinais:</strong> O equipamento realiza a média de
+              milhares de respostas a estímulos repetidos, eliminando ruídos.
+            </li>
+            <li>
+              <strong>Processamento Digital:</strong> Os sinais analógicos são
+              convertidos em digitais e processados por software.
+            </li>
+            <li>
+              <strong>Análise de Ondas:</strong> O profissional interpreta ondas
+              de I a VII, cada uma correspondente a uma parte da via auditiva.
+            </li>
+          </ol>
+          <ul>
+            <li><strong>Onda I:</strong> nervo auditivo (próximo da cóclea)</li>
+            <li>
+              <strong>Onda II:</strong> nervo auditivo (próximo ao tronco
+              encefálico)
+            </li>
+            <li><strong>Onda III:</strong> núcleo coclear</li>
+            <li><strong>Onda IV:</strong> complexo olivar superior</li>
+            <li>
+              <strong>Onda V:</strong> lemnisco lateral e colículo inferior
+            </li>
+            <li><strong>Ondas VI e VII:</strong> tronco encefálico superior</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Gráfico de Potenciais Evocados</h3>
+          <canvas
+            id="evokedPotentialChart"
+            width="600"
+            height="300"
+            aria-label="Gráfico de Potenciais Evocados"
+            role="img"
+          ></canvas>
+        </section>
+
+        <section>
+          <h3>Falhas Comuns e Soluções</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Problema</th>
+                <th>Causa</th>
+                <th>Solução</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ruído excessivo</td>
+                <td>Aterramento inadequado</td>
+                <td>
+                  Refazer a conexão e posicionar corretamente os eletrodos
+                </td>
+              </tr>
+              <tr>
+                <td>Ausência de resposta</td>
+                <td>Paciente agitado ou má conexão</td>
+                <td>Garantir repouso e revisar cabos</td>
+              </tr>
+              <tr>
+                <td>Latência alterada</td>
+                <td>Configuração de filtro ou calibração</td>
+                <td>Revisar e recalibrar</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h3>Importância Clínica</h3>
+          <ul>
+            <li>
+              Diagnóstico auditivo objetivo em bebês e pacientes não
+              colaboradores
+            </li>
+            <li>Detecção de alterações no nervo auditivo ou tronco cerebral</li>
+            <li>Avaliação vestibular através de VEMP</li>
+            <li>Investigação cognitiva com P300 e MMN</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Apresentação em Vídeo</h3>
+          <div class="video-wrapper">
+            <iframe
+              src="https://youtu.be/CCQC6w7rov8"
+              title="Evokadus - Apresentação"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>Fontes: Contronic, vídeos técnicos, artigos clínicos. &copy; 2025</p>
+    </footer>
+
+    <script>
+      function showTab(tabName) {
+        if (tabName === "evokadus") {
+          window.location.href = "index.html";
+        } else if (tabName === "equip2") {
+          window.location.href = "dea.html";
+        } else if (tabName === "equip3") {
+          window.location.href = "tomo.html";
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const ctx = document
+          .getElementById("evokedPotentialChart")
+          .getContext("2d");
+        new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: ["0ms", "2ms", "4ms", "6ms", "8ms", "10ms", "12ms"],
+            datasets: [
+              {
+                label: "Potencial Evocado",
+                data: [0, 5, 9, 6, 4, 7, 3],
+                borderColor: "#0073e6",
+                backgroundColor: "rgba(0,115,230,0.2)",
+                fill: true,
+                tension: 0.3,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                labels: {
+                  color: "#004d99",
+                  font: { size: 14 },
+                },
+              },
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
