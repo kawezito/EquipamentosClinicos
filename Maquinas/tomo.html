@@ -16,20 +16,24 @@
     <nav>
       <button onclick="showTab('evokadus')">Evokadus</button>
       <button onclick="showTab('equip2')">DEA</button>
-      <button onclick="showTab('equip3')" class="active">Tomografia Computadorizada</button>
+      <button onclick="showTab('equip3')" class="active">
+        Tomografia Computadorizada
+      </button>
+      <button onclick="showTab('equip4')">Folder</button>
     </nav>
 
     <main>
       <article
-        id="evokadus"
+        id="equip3"
         class="content active"
         role="tabpanel"
-        aria-labelledby="tab-evokadus"
+        aria-labelledby="tab-equip3"
       >
-        <h2>Tomografia Computadorizada</h2>
+        <h2>Tomografia Computadorizada Siemens</h2>
+
         <img
-          src="./assets/img/evokadus.png"
-          alt="Imagem do aparelho Evokadus"
+          src="./assets/img/equipment/tomografia.png"
+          alt="Imagem do aparelho de Tomografia Computadorizada Siemens"
           style="
             max-width: 100%;
             height: auto;
@@ -39,127 +43,51 @@
         />
 
         <section>
-          <h3>Função do Aparelho</h3>
+          <h3>Função da Tomografia</h3>
           <p>
-            O Evokadus é um equipamento utilizado para realizar Potenciais
-            Evocados Auditivos de Tronco Encefálico (BERA/ABR), além de outros
-            tipos de exames neurofisiológicos (MLR, LLR, P300, VEMP, etc.). A
-            função principal do BERA é avaliar a integridade das vias auditivas
-            do nervo coclear até o tronco encefálico, de forma objetiva, sem
-            depender da resposta consciente do paciente.
+            A Tomografia Computadorizada (TC) gera imagens em cortes
+            transversais do corpo humano, com melhor distinção entre tecidos em
+            comparação à radiologia convencional. É essencial em áreas como
+            neurologia, oncologia, cardiologia, traumas e planejamento
+            cirúrgico.
           </p>
         </section>
 
         <section class="tech-specs">
-          <h3>Ficha Técnica do Aparelho</h3>
-          <div>
-            <p><strong>Modelo:</strong> Evokadus</p>
-            <p>
-              <strong>Fabricante:</strong> Contronic Sistemas Automáticos Ltda
-              (Brasil)
-            </p>
-
-            <p><strong>Exames Realizados:</strong></p>
-            <ul>
-              <li>ABR – Resposta Auditiva de Tronco Encefálico</li>
-              <li>ASSR – Resposta Auditiva de Estado Estável</li>
-              <li>T-ABR – ABR de Triagem</li>
-              <li>EcochG – Eletrococleografia</li>
-              <li>MLR – Respostas de Média Latência</li>
-              <li>LLR – Respostas de Longa Latência</li>
-              <li>P300 – Potencial Cognitivo</li>
-              <li>MMN – Mismatch Negativity</li>
-              <li>cVEMP – Potencial Miogênico Vestibular Cervical</li>
-              <li>oVEMP – Potencial Miogênico Vestibular Ocular</li>
-              <li>gVEMP – Estimulação Galvânica Vestibular</li>
-            </ul>
-
-            <p><strong>Componentes Principais:</strong></p>
-            <ul>
-              <li>Estimulador acústico e galvânico</li>
-              <li>Interface biológica EVKBIO</li>
-              <li>Software Evokadus para Windows</li>
-            </ul>
-
-            <p><strong>Acessórios Inclusos:</strong></p>
-            <ul>
-              <li>Cabos de conexão</li>
-              <li>Eletrodos de superfície</li>
-              <li>Fones de inserção ou convencionais (auriculares)</li>
-            </ul>
-          </div>
+          <h3>Ficha Técnica - Modelos Siemens</h3>
+          <ul>
+            <li>
+              <strong>SOMATOM Force:</strong> Dual Source, 2 detectores, 250 ms,
+              ideal para exames cardíacos com 66 ms de resolução temporal,
+              tecnologia Dual Energy e 4D.
+            </li>
+            <li>
+              <strong>SOMATOM X.ceed:</strong> Alta resolução espacial e
+              temporal, bore de 82 cm, recursos como MyExam Companion e myNeedle
+              Companion.
+            </li>
+            <li>
+              <strong>SOMATOM go.Top:</strong> Scanner de 16 a 128 cortes,
+              controle por tablet Bluetooth, resolução isotrópica de 0,33 mm,
+              tecnologia de baixa dose (filtro de estanho).
+            </li>
+            <li>
+              <strong>NAEOTOM Alpha (Photon-counting CT):</strong> Detectores
+              CdTe com contagem de fótons por energia, 144 cortes, rotação de
+              0,25 s, melhor SNR e contraste.
+            </li>
+          </ul>
         </section>
 
         <section>
           <h3>Física Envolvida</h3>
           <p>
-            O funcionamento do Evokadus baseia-se em princípios bioelétricos
-            complexos, que envolvem as seguintes etapas:
+            A TC funciona com emissão de raios-X que giram ao redor do corpo,
+            sendo detectados após atravessar os tecidos. Os dados são
+            reconstruídos por algoritmos como FBP, SAFIRE e ADMIRE, sendo este
+            último o mais eficaz próximo a bordas. A técnica de dual-energy
+            permite diferenciar materiais com tensões distintas de kVp.
           </p>
-          <ol>
-            <li>
-              <strong>Potencial elétrico no corpo:</strong> As células nervosas
-              comunicam-se por impulsos elétricos chamados potenciais de ação,
-              gerados pela diferença de carga entre o interior e o exterior das
-              células.
-            </li>
-            <li>
-              <strong>Estímulo aplicado:</strong> O aparelho emite estímulos
-              sonoros ou galvânicos (correntes elétricas suaves) que ativam as
-              regiões auditivas ou vestibulares do sistema nervoso.
-            </li>
-            <li>
-              <strong>Resposta neural:</strong> O estímulo provoca respostas
-              elétricas específicas nos neurônios do nervo auditivo e áreas
-              cerebrais, gerando potenciais evocados.
-            </li>
-            <li>
-              <strong>Captação do sinal:</strong> Eletrodos posicionados na pele
-              captam os sinais elétricos resultantes, que são muito pequenos (na
-              ordem de microvolts).
-            </li>
-            <li>
-              <strong>Amplificação e filtragem:</strong> O sinal é amplificado e
-              filtrado para remover ruídos e destacar as frequências de
-              interesse.
-            </li>
-            <li>
-              <strong>Média de respostas:</strong> O estímulo é repetido
-              diversas vezes, e o software calcula a média das respostas para
-              melhorar a qualidade do sinal final.
-            </li>
-            <li>
-              <strong>Análise temporal:</strong> O software analisa a latência e
-              a forma das ondas para identificar respostas normais ou alterações
-              clínicas.
-            </li>
-            <li>
-              <strong>Aplicação em exames vestibulares:</strong> Em testes VEMP,
-              estímulos galvânicos provocam respostas musculares que também são
-              captadas e analisadas.
-            </li>
-            <li>
-              <strong>Cuidados físicos:</strong> A preparação da pele e a
-              proteção contra interferências eletromagnéticas são essenciais
-              para a qualidade dos sinais.
-            </li>
-          </ol>
-          <p>
-            Esses processos permitem ao Evokadus realizar diagnósticos precisos
-            e não invasivos do sistema auditivo e vestibular, baseados na
-            análise rigorosa dos potenciais elétricos evocados.
-          </p>
-        </section>
-
-        <section>
-          <h3>Gráfico de Potenciais Evocados</h3>
-          <canvas
-            id="evokedPotentialChart"
-            width="600"
-            height="300"
-            aria-label="Gráfico de Potenciais Evocados"
-            role="img"
-          ></canvas>
         </section>
 
         <section>
@@ -174,21 +102,38 @@
             </thead>
             <tbody>
               <tr>
-                <td>Ruído excessivo</td>
-                <td>Aterramento inadequado</td>
+                <td>Artefatos de movimento</td>
+                <td>Paciente não está imóvel</td>
                 <td>
-                  Refazer a conexão e posicionar corretamente os eletrodos
+                  Utilizar Dual Source ou 4D; reforçar instruções ao paciente
                 </td>
               </tr>
               <tr>
-                <td>Ausência de resposta</td>
-                <td>Paciente agitado ou má conexão</td>
-                <td>Garantir repouso e revisar cabos</td>
+                <td>Ruído excessivo</td>
+                <td>Dose muito baixa ou protocolo inadequado</td>
+                <td>
+                  Ativar ADMIRE, ajustar mAs/kVp, manutenção de detectores
+                </td>
               </tr>
               <tr>
-                <td>Latência alterada</td>
-                <td>Configuração de filtro ou calibração</td>
-                <td>Revisar e recalibrar</td>
+                <td>Desalinhamento de gantry/colimador</td>
+                <td>Problemas mecânicos</td>
+                <td>Realizar calibração periódica via RSTI</td>
+              </tr>
+              <tr>
+                <td>Falha no tubo de RX</td>
+                <td>Superaquecimento ou desgaste</td>
+                <td>Substituir e monitorar temperatura</td>
+              </tr>
+              <tr>
+                <td>Erros no software syngo</td>
+                <td>Bugs ou versões desatualizadas</td>
+                <td>Manter versão certificada (VB10, VA40, etc.)</td>
+              </tr>
+              <tr>
+                <td>Artefatos de dose espalhada</td>
+                <td>Proteção radiológica deficiente</td>
+                <td>Blindagem adequada e monitoramento com dosímetro</td>
               </tr>
             </tbody>
           </table>
@@ -198,12 +143,16 @@
           <h3>Importância Clínica</h3>
           <ul>
             <li>
-              Diagnóstico auditivo objetivo em bebês e pacientes não
-              colaboradores
+              Diagnóstico preciso com cortes transversais e reconstruções 3D
             </li>
-            <li>Detecção de alterações no nervo auditivo ou tronco cerebral</li>
-            <li>Avaliação vestibular através de VEMP</li>
-            <li>Investigação cognitiva com P300 e MMN</li>
+            <li>
+              Utilidade em traumas, câncer, doenças vasculares e neurológicas
+            </li>
+            <li>Permite avaliações funcionais (volume, perfusão, fluxo)</li>
+            <li>
+              Redução de dose com softwares CARE, FAST e filtros especiais
+            </li>
+            <li>Facilita procedimentos guiados (biópsias, neurocirurgia)</li>
           </ul>
         </section>
 
@@ -211,33 +160,13 @@
           <h3>Apresentação em Vídeo</h3>
           <div class="video-wrapper">
             <iframe
-              src="https://www.youtube.com/embed/CCQC6w7rov8?si=tdQr1P37WoyeKUbO"
-              title="Evokadus - Apresentação"
+              src="https://www.youtube.com/embed/MrWbFWyFvuU"
+              title="Tomografia Computadorizada Siemens"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>
         </section>
-      </article>
-
-      <article
-        id="equip2"
-        class="content"
-        role="tabpanel"
-        aria-labelledby="tab-equip2"
-      >
-        <h2>Equipamento 2</h2>
-        <p>Conteúdo técnico do segundo equipamento aqui...</p>
-      </article>
-
-      <article
-        id="equip3"
-        class="content"
-        role="tabpanel"
-        aria-labelledby="tab-equip3"
-      >
-        <h2>Equipamento 3</h2>
-        <p>Conteúdo técnico do terceiro equipamento aqui...</p>
       </article>
     </main>
 
@@ -253,49 +182,10 @@
           window.location.href = "./dea.html";
         } else if (tabName === "equip3") {
           window.location.href = "./tomo.html";
+        } else if (tabName === "equip4") {
+          window.location.href = "";
         }
       }
-
-      // Código exemplo para popular o gráfico (você pode ajustar conforme necessário)
-      window.addEventListener("DOMContentLoaded", () => {
-        const ctx = document
-          .getElementById("evokedPotentialChart")
-          .getContext("2d");
-        new Chart(ctx, {
-          type: "line",
-          data: {
-            labels: ["0ms", "2ms", "4ms", "6ms", "8ms", "10ms", "12ms"],
-            datasets: [
-              {
-                label: "Potencial Evocado",
-                data: [0, 5, 9, 6, 4, 7, 3],
-                borderColor: "#0073e6",
-                backgroundColor: "rgba(0,115,230,0.2)",
-                fill: true,
-                tension: 0.3,
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                labels: {
-                  color: "#004d99",
-                  font: {
-                    size: 14,
-                  },
-                },
-              },
-            },
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
-            },
-          },
-        });
-      });
     </script>
   </body>
 </html>

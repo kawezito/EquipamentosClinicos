@@ -17,19 +17,21 @@
       <button onclick="showTab('evokadus')">Evokadus</button>
       <button onclick="showTab('equip2')" class="active">DEA</button>
       <button onclick="showTab('equip3')">Tomografia Computadorizada</button>
+      <button onclick="showTab('equip4')">Folder</button>
     </nav>
 
     <main>
       <article
-        id="evokadus"
+        id="equip2"
         class="content active"
         role="tabpanel"
-        aria-labelledby="tab-evokadus"
+        aria-labelledby="tab-equip2"
       >
-        <h2>DEA</h2>
+        <h2>DEA - Desfibrilador Externo Automático</h2>
+
         <img
-          src="./assets/img/evokadus.png"
-          alt="Imagem do aparelho Evokadus"
+          src="./assets/img/equipment/dea.png"
+          alt="Imagem do Desfibrilador Externo Automático"
           style="
             max-width: 100%;
             height: auto;
@@ -41,169 +43,104 @@
         <section>
           <h3>Função do Aparelho</h3>
           <p>
-            O Evokadus é um equipamento utilizado para realizar Potenciais
-            Evocados Auditivos de Tronco Encefálico (BERA/ABR), além de outros
-            tipos de exames neurofisiológicos (MLR, LLR, P300, VEMP, etc.). A
-            função principal do BERA é avaliar a integridade das vias auditivas
-            do nervo coclear até o tronco encefálico, de forma objetiva, sem
-            depender da resposta consciente do paciente.
+            O DEA (Desfibrilador Externo Automático) é utilizado para tratar
+            paradas cardíacas súbitas causadas por arritmias como fibrilação
+            ventricular ou taquicardia ventricular sem pulso. Ele analisa o
+            ritmo cardíaco do paciente e, caso necessário, aplica um choque
+            elétrico para restaurar o ritmo normal do coração.
           </p>
         </section>
 
         <section class="tech-specs">
-          <h3>Ficha Técnica do Aparelho</h3>
-          <div>
-            <p><strong>Modelo:</strong> Evokadus</p>
-            <p>
-              <strong>Fabricante:</strong> Contronic Sistemas Automáticos Ltda
-              (Brasil)
-            </p>
-
-            <p><strong>Exames Realizados:</strong></p>
-            <ul>
-              <li>ABR – Resposta Auditiva de Tronco Encefálico</li>
-              <li>ASSR – Resposta Auditiva de Estado Estável</li>
-              <li>T-ABR – ABR de Triagem</li>
-              <li>EcochG – Eletrococleografia</li>
-              <li>MLR – Respostas de Média Latência</li>
-              <li>LLR – Respostas de Longa Latência</li>
-              <li>P300 – Potencial Cognitivo</li>
-              <li>MMN – Mismatch Negativity</li>
-              <li>cVEMP – Potencial Miogênico Vestibular Cervical</li>
-              <li>oVEMP – Potencial Miogênico Vestibular Ocular</li>
-              <li>gVEMP – Estimulação Galvânica Vestibular</li>
-            </ul>
-
-            <p><strong>Componentes Principais:</strong></p>
-            <ul>
-              <li>Estimulador acústico e galvânico</li>
-              <li>Interface biológica EVKBIO</li>
-              <li>Software Evokadus para Windows</li>
-            </ul>
-
-            <p><strong>Acessórios Inclusos:</strong></p>
-            <ul>
-              <li>Cabos de conexão</li>
-              <li>Eletrodos de superfície</li>
-              <li>Fones de inserção ou convencionais (auriculares)</li>
-            </ul>
-          </div>
-        </section>
-
-        <section>
-          <h3>Física Envolvida</h3>
-          <p>
-            O funcionamento do Evokadus baseia-se em princípios bioelétricos
-            complexos, que envolvem as seguintes etapas:
-          </p>
-          <ol>
-            <li>
-              <strong>Potencial elétrico no corpo:</strong> As células nervosas
-              comunicam-se por impulsos elétricos chamados potenciais de ação,
-              gerados pela diferença de carga entre o interior e o exterior das
-              células.
-            </li>
-            <li>
-              <strong>Estímulo aplicado:</strong> O aparelho emite estímulos
-              sonoros ou galvânicos (correntes elétricas suaves) que ativam as
-              regiões auditivas ou vestibulares do sistema nervoso.
-            </li>
-            <li>
-              <strong>Resposta neural:</strong> O estímulo provoca respostas
-              elétricas específicas nos neurônios do nervo auditivo e áreas
-              cerebrais, gerando potenciais evocados.
-            </li>
-            <li>
-              <strong>Captação do sinal:</strong> Eletrodos posicionados na pele
-              captam os sinais elétricos resultantes, que são muito pequenos (na
-              ordem de microvolts).
-            </li>
-            <li>
-              <strong>Amplificação e filtragem:</strong> O sinal é amplificado e
-              filtrado para remover ruídos e destacar as frequências de
-              interesse.
-            </li>
-            <li>
-              <strong>Média de respostas:</strong> O estímulo é repetido
-              diversas vezes, e o software calcula a média das respostas para
-              melhorar a qualidade do sinal final.
-            </li>
-            <li>
-              <strong>Análise temporal:</strong> O software analisa a latência e
-              a forma das ondas para identificar respostas normais ou alterações
-              clínicas.
-            </li>
-            <li>
-              <strong>Aplicação em exames vestibulares:</strong> Em testes VEMP,
-              estímulos galvânicos provocam respostas musculares que também são
-              captadas e analisadas.
-            </li>
-            <li>
-              <strong>Cuidados físicos:</strong> A preparação da pele e a
-              proteção contra interferências eletromagnéticas são essenciais
-              para a qualidade dos sinais.
-            </li>
-          </ol>
-          <p>
-            Esses processos permitem ao Evokadus realizar diagnósticos precisos
-            e não invasivos do sistema auditivo e vestibular, baseados na
-            análise rigorosa dos potenciais elétricos evocados.
-          </p>
-        </section>
-
-        <section>
-          <h3>Gráfico de Potenciais Evocados</h3>
-          <canvas
-            id="evokedPotentialChart"
-            width="600"
-            height="300"
-            aria-label="Gráfico de Potenciais Evocados"
-            role="img"
-          ></canvas>
-        </section>
-
-        <section>
-          <h3>Falhas Comuns e Soluções</h3>
+          <h3>Ficha Técnica</h3>
           <table>
-            <thead>
-              <tr>
-                <th>Problema</th>
-                <th>Causa</th>
-                <th>Solução</th>
-              </tr>
-            </thead>
             <tbody>
               <tr>
-                <td>Ruído excessivo</td>
-                <td>Aterramento inadequado</td>
-                <td>
-                  Refazer a conexão e posicionar corretamente os eletrodos
-                </td>
+                <td><strong>Nome do aparelho:</strong></td>
+                <td>DEA (Desfibrilador Externo Automático)</td>
               </tr>
               <tr>
-                <td>Ausência de resposta</td>
-                <td>Paciente agitado ou má conexão</td>
-                <td>Garantir repouso e revisar cabos</td>
+                <td><strong>Tensão de operação:</strong></td>
+                <td>Bateria interna, geralmente 12V a 18V CC</td>
               </tr>
               <tr>
-                <td>Latência alterada</td>
-                <td>Configuração de filtro ou calibração</td>
-                <td>Revisar e recalibrar</td>
+                <td><strong>Capacitor:</strong></td>
+                <td>Armazena carga (geralmente de 150 a 360 joules)</td>
+              </tr>
+              <tr>
+                <td><strong>Tipo de choque:</strong></td>
+                <td>Monofásico ou bifásico (preferencialmente bifásico)</td>
+              </tr>
+              <tr>
+                <td><strong>Peso:</strong></td>
+                <td>Aproximadamente 1,5 a 3,5 kg</td>
+              </tr>
+              <tr>
+                <td><strong>Tela:</strong></td>
+                <td>LCD ou LED com instruções de uso</td>
+              </tr>
+              <tr>
+                <td><strong>Interface:</strong></td>
+                <td>Botões e comandos de voz para operação</td>
+              </tr>
+              <tr>
+                <td><strong>Tempo de carga:</strong></td>
+                <td>5 a 15 segundos (dependendo do modelo)</td>
+              </tr>
+              <tr>
+                <td><strong>Alimentação:</strong></td>
+                <td>Bateria recarregável ou substituível</td>
+              </tr>
+              <tr>
+                <td><strong>Autoteste:</strong></td>
+                <td>Automático (diário, semanal, mensal)</td>
               </tr>
             </tbody>
           </table>
         </section>
 
         <section>
-          <h3>Importância Clínica</h3>
+          <h3>Possíveis Falhas e Soluções</h3>
           <ul>
             <li>
-              Diagnóstico auditivo objetivo em bebês e pacientes não
-              colaboradores
+              <strong>Bateria descarregada:</strong> Substituição ou recarga
+              periódica
             </li>
-            <li>Detecção de alterações no nervo auditivo ou tronco cerebral</li>
-            <li>Avaliação vestibular através de VEMP</li>
-            <li>Investigação cognitiva com P300 e MMN</li>
+            <li>
+              <strong>Erro na leitura do ritmo cardíaco:</strong> Recolocar os
+              eletrodos corretamente
+            </li>
+            <li>
+              <strong>Eletrodos ressecados ou vencidos:</strong> Trocar os
+              eletrodos por novos
+            </li>
+            <li>
+              <strong>Erro de software:</strong> Enviar para manutenção
+              especializada
+            </li>
+            <li>
+              <strong>Interferência eletromagnética:</strong> Afastar de fontes
+              de interferência
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Importância dos Exames Realizados pelo DEA</h3>
+          <ul>
+            <li>
+              Analisa automaticamente o ritmo cardíaco antes de aplicar o choque
+            </li>
+            <li>Evita choques desnecessários em ritmos não chocáveis</li>
+            <li>Importante no armazenamento de histórico de uso e ECG</li>
+            <li>
+              Modelos mais avançados registram os traçados do ECG e dados do
+              evento, que podem ser analisados por médicos posteriormente.
+            </li>
+            <li>
+              Fornece informações cruciais para o atendimento pós-evento, como o
+              tempo até o choque e o número de choques aplicados.
+            </li>
           </ul>
         </section>
 
@@ -211,33 +148,17 @@
           <h3>Apresentação em Vídeo</h3>
           <div class="video-wrapper">
             <iframe
-              src="https://www.youtube.com/embed/CCQC6w7rov8?si=tdQr1P37WoyeKUbO"
-              title="Evokadus - Apresentação"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/aONTLxduEjQ?si=TKHQQVMCR-XuRO4d"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
           </div>
         </section>
-      </article>
-
-      <article
-        id="equip2"
-        class="content"
-        role="tabpanel"
-        aria-labelledby="tab-equip2"
-      >
-        <h2>Equipamento 2</h2>
-        <p>Conteúdo técnico do segundo equipamento aqui...</p>
-      </article>
-
-      <article
-        id="equip3"
-        class="content"
-        role="tabpanel"
-        aria-labelledby="tab-equip3"
-      >
-        <h2>Equipamento 3</h2>
-        <p>Conteúdo técnico do terceiro equipamento aqui...</p>
       </article>
     </main>
 
@@ -253,49 +174,10 @@
           window.location.href = "./dea.html";
         } else if (tabName === "equip3") {
           window.location.href = "./tomo.html";
+        } else if (tabName === "equip4") {
+          window.location.href = "";
         }
       }
-
-      // Código exemplo para popular o gráfico (você pode ajustar conforme necessário)
-      window.addEventListener("DOMContentLoaded", () => {
-        const ctx = document
-          .getElementById("evokedPotentialChart")
-          .getContext("2d");
-        new Chart(ctx, {
-          type: "line",
-          data: {
-            labels: ["0ms", "2ms", "4ms", "6ms", "8ms", "10ms", "12ms"],
-            datasets: [
-              {
-                label: "Potencial Evocado",
-                data: [0, 5, 9, 6, 4, 7, 3],
-                borderColor: "#0073e6",
-                backgroundColor: "rgba(0,115,230,0.2)",
-                fill: true,
-                tension: 0.3,
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                labels: {
-                  color: "#004d99",
-                  font: {
-                    size: 14,
-                  },
-                },
-              },
-            },
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
-            },
-          },
-        });
-      });
     </script>
   </body>
 </html>

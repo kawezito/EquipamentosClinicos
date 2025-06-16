@@ -17,6 +17,7 @@
       <button onclick="showTab('evokadus')" class="active">Evokadus</button>
       <button onclick="showTab('equip2')">DEA</button>
       <button onclick="showTab('equip3')">Tomografia Computadorizada</button>
+      <button onclick="showTab('equip4')">Folder</button>
     </nav>
 
     <main>
@@ -28,7 +29,7 @@
       >
         <h2>Evokadus - PEATE / BERA</h2>
         <img
-          src="Maquinas/assets/img/evokadus.png"
+          src="Maquinas/assets/img/equipment/evokadus.png"
           alt="Imagem do aparelho Evokadus"
           style="
             max-width: 100%;
@@ -155,18 +156,6 @@
             <li><strong>Ondas VI e VII:</strong> tronco encefálico superior</li>
           </ul>
         </section>
-
-        <section>
-          <h3>Gráfico de Potenciais Evocados</h3>
-          <canvas
-            id="evokedPotentialChart"
-            width="600"
-            height="300"
-            aria-label="Gráfico de Potenciais Evocados"
-            role="img"
-          ></canvas>
-        </section>
-
         <section>
           <h3>Falhas Comuns e Soluções</h3>
           <table>
@@ -225,6 +214,67 @@
         </section>
       </article>
     </main>
+    <section class="grupo-section">
+      <h2>Integrantes do Grupo</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img
+            src="Maquinas/assets/img/members/kawe.png"
+            alt="Foto de Kawe Firmino"
+          />
+          <h3>Kawe Souza Firmino</h3>
+          <p>
+            Desenvolveu o site informativo com os dados das máquinas e
+            pesquisou, junto ao Jonas, o equipamento BERA (Evokadus)
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="Maquinas/assets/img/members/mateus.png"
+            alt="Foto de José Mateus"
+          />
+          <h3>José Mateus Silva Barbosa</h3>
+          <p>
+            Responsável pelo folder informativo e pela pesquisa sobre a
+            Tomografia Computadorizada
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="Maquinas/assets/img/members/vinicius.png"
+            alt="Foto de José Vinicius"
+          />
+          <h3>José Vinicius da Silva</h3>
+          <p>
+            Responsável pelo folder informativo e pela pesquisa sobre a
+            Tomografia Computadorizada
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="Maquinas/assets/img/maria.jpg"
+            alt="Foto de Jonas Avelino"
+          />
+          <h3>Jonas Avelino Freire</h3>
+          <p>Pesquisou, junto ao Kawe, o equipamento BERA (Evokadus)</p>
+        </div>
+
+        <div class="card">
+          <img src="Maquinas/assets/img/maria.jpg" alt="Foto de José Tavares" />
+          <h3>José Tavares dos Santos Junior</h3>
+          <p>Responsável pela pesquisa sobre o equipamento DEA</p>
+        </div>
+
+        <div class="card">
+          <img src="Maquinas/assets/img/maria.jpg" alt="Foto de Marlon" />
+          <h3>Marlon</h3>
+          <p>Responsável pela pesquisa sobre o equipamento DEA</p>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <p>Fontes: Contronic, vídeos técnicos, artigos clínicos. &copy; 2025</p>
@@ -238,46 +288,10 @@
           window.location.href = "Maquinas/dea.html";
         } else if (tabName === "equip3") {
           window.location.href = "Maquinas/tomo.html";
+        } else if (tabName === "equip4") {
+          window.location.href = "";
         }
       }
-
-      window.addEventListener("DOMContentLoaded", () => {
-        const ctx = document
-          .getElementById("evokedPotentialChart")
-          .getContext("2d");
-        new Chart(ctx, {
-          type: "line",
-          data: {
-            labels: ["0ms", "2ms", "4ms", "6ms", "8ms", "10ms", "12ms"],
-            datasets: [
-              {
-                label: "Potencial Evocado",
-                data: [0, 5, 9, 6, 4, 7, 3],
-                borderColor: "#0073e6",
-                backgroundColor: "rgba(0,115,230,0.2)",
-                fill: true,
-                tension: 0.3,
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: {
-                labels: {
-                  color: "#004d99",
-                  font: { size: 14 },
-                },
-              },
-            },
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
-            },
-          },
-        });
-      });
     </script>
   </body>
 </html>
