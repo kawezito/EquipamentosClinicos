@@ -228,6 +228,18 @@ tbody tr:nth-child(even) {
     color: #333;
 }
 
+/* Responsividade para tabelas */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.table-wrapper table {
+    min-width: 600px;
+    /* evita quebra feia de colunas em telas pequenas */
+}
+
 
 footer {
     text-align: center;
