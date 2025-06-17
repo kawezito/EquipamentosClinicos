@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Equipamentos Médicos</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./style.css" />
+
   </head>
 
   <body>
@@ -143,17 +144,35 @@
           </div>
         </section>
 
-        <section>
-          <h3>Física Envolvida</h3>
-          <p>
-            A TC funciona com emissão de raios-X que giram ao redor do corpo,
-            sendo detectados após atravessar os tecidos. Os dados são
-            reconstruídos por algoritmos como FBP, SAFIRE e ADMIRE, sendo este
-            último o mais eficaz próximo a bordas. A técnica de dual-energy
-            permite diferenciar materiais com tensões distintas de kVp.
-          </p>
-        </section>
-
+<section>
+  <h3>Física Envolvida</h3>
+  <p>
+    A Tomografia Computadorizada (TC) envolve uma série de processos físicos integrados que permitem obter imagens detalhadas do interior do corpo humano:
+  </p>
+  <ul>
+    <li>
+      <strong>1. Geração de Raios X:</strong> Utiliza-se um tubo onde elétrons acelerados colidem com um alvo metálico, produzindo radiação por frenagem e emissão característica. O feixe é policromático e sua energia, entre 80 a 140 kVp, afeta contraste e dose absorvida.
+    </li>
+    <li>
+      <strong>2. Geometria e Rotação:</strong> O tubo e os detectores giram 360° ao redor do paciente. Em sistemas helicoidais, a mesa se move continuamente, formando um trajeto espiral. O <em>pitch</em> controla a relação entre avanço da mesa e espessura do feixe, influenciando resolução e dose.
+    </li>
+    <li>
+      <strong>3. Interação com Tecidos:</strong> Os raios X sofrem atenuação ao atravessar o corpo, principalmente por efeito fotoelétrico (bom contraste em estruturas densas) e espalhamento Compton (predominante em tecidos moles). Cada voxel apresenta um coeficiente de atenuação linear distinto.
+    </li>
+    <li>
+      <strong>4. Detecção:</strong> Detectores semicondutores, como CdTe, convertem fótons em sinais elétricos. Detectores de contagem de fótons classificam os fótons por energia, melhorando a diferenciação de tecidos e a eficiência de dose.
+    </li>
+    <li>
+      <strong>5. Reconstrução da Imagem:</strong> Algoritmos como FBP (Filtered Back Projection) e reconstruções iterativas como SAFIRE e ADMIRE reconstroem imagens com diferentes níveis de qualidade, ruído e fidelidade. Técnicas <em>dual-energy</em> usam dois níveis de kVp para gerar imagens que distinguem materiais como cálcio e ácido úrico.
+    </li>
+    <li>
+      <strong>6. Pós-processamento:</strong> Softwares avançados aplicam fusão de imagens, reconstrução tridimensional (VR, MIP) e análise funcional (ex: curvas de perfusão), permitindo diagnósticos mais precisos e personalizados.
+    </li>
+  </ul>
+  <p>
+    A TC é um exemplo de aplicação integrada da física quântica (interação fóton-matéria), eletrônica (detectores), física computacional (reconstrução numérica) e matemática (transformadas de Fourier e Radon). As inovações recentes, como detecção espectral por contagem de fótons, abrem caminhos para diagnósticos mais específicos e seguros, alinhados à medicina personalizada.
+  </p>
+</section>
         <section>
           <h3>Falhas Comuns e Soluções</h3>
           <div class="table-wrapper">
