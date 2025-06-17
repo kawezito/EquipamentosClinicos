@@ -112,6 +112,136 @@
             (marca-passo natural do coração) retome o comando e restabeleça o
             ritmo normal.
           </p>
+
+          <p>
+            <strong>1. Fonte de Energia (Bateria)</strong><br />
+            <ul>
+              <li>
+              O DEA é alimentado por uma bateria de alta capacidade, geralmente de
+            lítio, que fornece uma tensão contínua (DC) de aproximadamente 12 a
+            18 volts.
+            </li>
+            </ul>
+          </p>
+
+          <p>
+            <strong>2. Circuito de Carga (Conversor DC-DC Boost)</strong><br />
+            <ul>
+              <li>A energia da bateria é amplificada por um circuito conversor DC-DC,
+            que aumenta a tensão para centenas ou até milhares de volts. Esse
+            circuito carrega um banco de capacitores com uma tensão de
+            aproximadamente 1000 a 2000 volts, dependendo do modelo e da energia
+            desejada para o choque (ex: 150 joules).</li>
+            </ul>
+          </p>
+
+          <p>
+            <strong>3. Acúmulo de Energia (Capacitor)</strong><br />
+            <ul>
+              <li>
+                A energia amplificada é armazenada temporariamente em capacitores. O
+            capacitor age como um "reservatório" de carga elétrica. O DEA
+            carrega o capacitor até o nível necessário, e um circuito de
+            controle monitora esse processo. A carga pode levar entre 5 a 15
+            segundos, dependendo do estado da bateria e da energia alvo.
+              </li>
+            </ul>
+          </p>
+
+          <p>
+            <strong>4. Análise do Ritmo Cardíaco</strong><br />
+            <ul>
+              <li>Enquanto o capacitor carrega, o DEA realiza uma análise automática
+            do ritmo cardíaco do paciente por meio dos eletrodos adesivos
+            (pads). Se detectar uma arritmia choqueável (como fibrilação
+            ventricular), ele autoriza a entrega do choque. Caso contrário,
+            bloqueia a descarga por segurança.</li>
+            </ul>
+          </p>
+
+          <p>
+            <strong>5. Descarga (Pulso Elétrico)</strong><br />
+           <ul>
+            <li>
+               Se autorizado, o DEA fecha um circuito de descarga, liberando
+            instantaneamente a energia do capacitor pelos eletrodos adesivos
+            colados no tórax do paciente. A descarga é controlada, geralmente
+            bifásica: a corrente passa em uma direção, e depois é revertida
+            rapidamente, o que melhora a eficiência da desfibrilação e reduz
+            danos ao miocárdio. A duração do choque é muito curta, geralmente
+            entre 4 a 10 milissegundos.
+            </li>
+           </ul>
+          </p>
+
+          <p>
+            <strong>6. Passagem da Corrente pelo Corpo</strong><br />
+           <ul>
+            <li>
+               A corrente elétrica flui entre os dois eletrodos, atravessando o
+            tórax e principalmente o músculo cardíaco (miocárdio). A corrente
+            despolariza as células cardíacas simultaneamente, com o objetivo de
+            interromper a arritmia e permitir que o coração retome um ritmo
+            normal por conta própria. A corrente típica entregue ao corpo é de
+            15 a 45 amperes, por poucos milissegundos.
+            </li>
+           </ul>
+          </p>
+
+          <p>
+            <strong>7. Ciclo se Repete (se necessário)</strong><br />
+            <ul>
+              <li>
+                Após o choque, o DEA reanalisa o ritmo cardíaco. Se ainda for
+            necessário, ele recarrega o capacitor e se prepara para novo choque
+            após mais 2 minutos de RCP. O DEA calcula a carga de desfibrilação
+            com base em algoritmos internos que analisam o ritmo cardíaco do
+            paciente por meio dos eletrodos adesivos colocados no tórax.
+              </li>
+            </ul>
+          </p>
+
+          <p><strong>Etapas do cálculo da carga no DEA:</strong></p>
+          <ul>
+            <li>
+              <strong>1. Análise do ritmo cardíaco:</strong> O DEA detecta o
+              ritmo do coração (por exemplo, fibrilação ventricular ou
+              taquicardia ventricular sem pulso).
+            </li>
+            <li>
+              <strong>2. Escolha da energia (joules):</strong> A maioria dos DEA
+              modernos usa forma de onda bifásica (120–200 J, podendo chegar a
+              360 J).
+            </li>
+            <li>
+              <strong>3. Algoritmo de ajuste automático:</strong> Considera a
+              impedância torácica, idade estimada e resposta a choques
+              anteriores.
+            </li>
+            <li>
+              <strong>4. Medida da impedância torácica:</strong> O DEA mede a
+              resistência entre os eletrodos e ajusta a tensão para garantir a
+              corrente ideal.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Fórmula básica envolvida (simplificada)</strong><br />
+            A energia liberada (E) é dada por:<br />
+            <code>E = (1/2) × C × V²</code><br />
+            Onde:<br />
+            E = energia (joules),<br />
+            C = capacitância (farads),<br />
+            V = voltagem (volts).
+          </p>
+
+          <p>
+            <strong>Resumo:</strong><br />
+            O DEA não aplica a mesma carga para todos. Ele analisa o ritmo
+            cardíaco, mede a impedância do corpo e, com base em algoritmos,
+            determina a energia ideal. Isso garante eficiência e segurança no
+            atendimento de parada cardíaca.
+          </p>
         </section>
 
         <section>
@@ -244,7 +374,7 @@
 
         <div class="card">
           <img
-            src="./assets/img/members/maria.jpeg"
+            src="./assets/img/members/jonas.jpeg"
             alt="Foto de Jonas Avelino"
           />
           <h3>Jonas Avelino Freire</h3>
@@ -272,6 +402,17 @@
       <p>Fontes: Contronic, vídeos técnicos, artigos clínicos. &copy; 2025</p>
     </footer>
 
+    <!-- Plugin VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
     <script>
       function showTab(tabName) {
         if (tabName === "evokadus") {
